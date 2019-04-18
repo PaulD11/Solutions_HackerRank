@@ -8,6 +8,8 @@ import java.util.regex.*;
 
 public class Solution {
 
+  //################### SOLUTION #############################
+
     static void extraLongFactorials(int n) {
 
       BigInteger bi1 = new BigInteger(String.valueOf(n));
@@ -20,6 +22,8 @@ public class Solution {
       System.out.println(bi1);
 
     }
+
+    //################### SOLUTION #############################
 
     private static final Scanner scanner = new Scanner(System.in);
 
