@@ -36,15 +36,10 @@ function jumpingOnClouds(c) {
             split[i] = false;
         }
     }
-
     for (let i = 0; i < split.length; i++) {
-        if (split[i] == false) {
+        if (split[i] === false) {
             split.splice(i, 1);
         }
-    }
-    split.unshift(0);
-
-    for (let i = 0; i < split.length -1; i++) {
         if (split[i] + 2 == split[i + 2]) {
             split.splice(i + 1, 1);
         }
