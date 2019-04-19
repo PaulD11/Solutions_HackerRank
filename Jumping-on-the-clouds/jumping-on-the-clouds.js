@@ -27,25 +27,25 @@ function readLine() {
 //################### SOLUTION #############################
 
 function jumpingOnClouds(c) {
-    let split = String(c).split(',');
+    let splittedC = String(c).split(',');
 
-    for (let i = 0; i < split.length; i++){
-        if (split[i] == 0) {
-            split[i] = i;
+    for (let i = 0; i < splittedC.length; i++){
+        if (splittedC[i] == 0) {
+            splittedC[i] = i;
         } else {
-            split[i] = false;
+            splittedC[i] = false;
         }
     }
-    for (let i = 0; i < split.length; i++) {
-        if (split[i] === false) {
-            split.splice(i, 1);
+    for (let i = 0; i < splittedC.length; i++) {
+        if (splittedC[i] === false) {
+            splittedC.splice(i, 1);
         }
-        if (split[i] + 2 == split[i + 2]) {
-            split.splice(i + 1, 1);
+        if (splittedC[i] + 2 == splittedC[i + 2]) {
+            splittedC.splice(i + 1, 1);
         }
     }
 
-    return split.length -1;
+    return splittedC.length -1;
 }
 
 //################### SOLUTION #############################
